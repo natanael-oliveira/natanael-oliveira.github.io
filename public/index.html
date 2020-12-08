@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./style_galeria.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body style="background-color: black;">
+
+    <!-- MODAL PROJECT  -->
+    <div class="modal_container">
+        <div class="modal_content">
+            <span class="modal_btn_close">×</span>
+            <div class="modal_carousel">
+                <img src="./images/01.jpg" class="carousel_img_active">
+                <div class="carousel_control">
+                    <span class="carousel_btn btn_prev">◂</span>
+                    <span class="carousel_btn btn_next">▸</span>
+                </div>
+            </div>
+            <div class="modal_infor">
+                <h2 class="modal_title">Título</h2>
+                <p class="modal_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                <div class="modal_control">
+                    <a href="#" class="modal_btn_control modal_btn_link_github">Github</a>
+                    <a href="#" class="modal_btn_control modal_btn_link_demo">Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL PROJECT END -->
+
+    <!-- NAVBAR -->
+    <nav class="shadow-lg navbar navbar-dark bg-dark navbar-expand-md">
+        <a href="#" class="navbar-brand">Portfólio</a>
+        <button class="navbar-toggler" data-target="#menu" data-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a href="#" class="nav-link">Sobre mim</a></li>
+                <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#contatos" class="nav-link">Contatos</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- HEADER  -->
+    <div class="header">
+
+    </div>
+    <!-- HEADER END -->
+
+    <!-- CARDS INFORS -->
+    <div class="infor_container">
+        <div class="infor_left card_box">
+            <div class="infor_avatar">
+                <img
+                    src="https://avatars1.githubusercontent.com/u/51293075?s=460&u=ccacd7285157c12127e0999e0fa6fddaa83f8480&v=4">
+            </div>
+            <h4 class="infor_text mt-2">Natanael Oliveira</h4>
+        </div>
+        <div class="infor_right card_box">
+
+        </div>
+    </div>
+    <hr class="hr">
+    <!-- CARDS INFORS END -->
+
+    <!-- GALERIA PROJECTS  -->
+    <div class="galeria_container" id="projetos">
+        <h1 class="text_banner">PROJETOS</h1>
+        <div class="galeria_content">
+        </div>
+    </div>
+    <hr class="hr">
+    <!-- GALERIA PROJECTS END -->
+
+    <!-- CONTACTS -->
+    <div class="contact_container" id="contatos">
+        <h1 class="text_banner">CONTATOS</h1>
+    </div>
+    <!-- CONTACTS END -->
+
+    <script src="./bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

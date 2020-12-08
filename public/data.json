@@ -1,0 +1,85 @@
+{
+    "projetos": [
+        {
+            "id": 1,
+            "name": "Site Jornalístico",
+            "github": "https://github.com/natanael-oliveira/sites_primeiro_ano/tree/master/site-jornalistico",
+            "demo": "https://natanael-oliveira.github.io/sites_primeiro_ano/site-jornalistico/index.html",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "images": [
+                "site_jornalistico/jornalistico.jpg",
+                "site_jornalistico/execucao.gif"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Boutcoffee - Site de cafeteria",
+            "github": "https://github.com/natanael-oliveira/site_cafeteria",
+            "demo": "",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "images": [
+                "site_boutcoffee/boutcoffee.jpg",
+                "site_boutcoffee/img0.png",
+                "site_boutcoffee/img1.png",
+                "site_boutcoffee/img2.png",
+                "site_boutcoffee/img3.png",
+                "site_boutcoffee/img4.png",
+                "site_boutcoffee/img5.png",
+                "site_boutcoffee/img7.png",
+                "site_boutcoffee/img8.png",
+                "site_boutcoffee/img9.png",
+                "site_boutcoffee/img10.png",
+                "site_boutcoffee/img11.png"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "SAGE - Sistema Administrativo de Gerenciamento de Estoque",
+            "github": "https://github.com/natanael-oliveira/sistema_SAGE",
+            "demo": "",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "images": [
+                "sistema_sage/img0.jpg",
+                "sistema_sage/img1.png",
+                "sistema_sage/img2.png",
+                "sistema_sage/img3.png",
+                "sistema_sage/img4.png",
+                "sistema_sage/img5.png",
+                "sistema_sage/img7.png",
+                "sistema_sage/img8.png",
+                "sistema_sage/img9.png",
+                "sistema_sage/img10.png",
+                "sistema_sage/img11.png"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Mimospet - Site de petshop",
+            "github": "https://github.com/natanael-oliveira/site_petshop",
+            "demo": "",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "images": [
+                "site_petshop/mimospet.jpg",
+                "site_petshop/img0.png",
+                "site_petshop/img1.png",
+                "site_petshop/img2.png",
+                "site_petshop/img3.png",
+                "site_petshop/img4.png",
+                "site_petshop/img5.png",
+                "site_petshop/img7.png",
+                "site_petshop/img8.png"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Site de Dados da Covid-19",
+            "github": "https://github.com/natanael-oliveira/site-dados-covid19",
+            "demo": "https://natanael-oliveira.github.io/site-dados-covid19/",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "images": [
+                "site_covid19/img01.png",
+                "site_covid19/gif01.gif"
+            ]
+        }
+    ]
+}
