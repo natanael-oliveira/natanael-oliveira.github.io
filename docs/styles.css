@@ -68,6 +68,7 @@ body{
 body{
     overflow: hidden;
 }
+
 .msg_error{
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
