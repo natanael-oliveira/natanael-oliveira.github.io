@@ -47,7 +47,7 @@
     background-color: rgba(0, 0, 0, 0.85);
     overflow-y: auto;
     visibility: hidden;
-    z-index: 1;
+    z-index: 100;
     transition: visibility .3s linear,opacity .3s linear;
     opacity:0;
 
@@ -137,4 +137,7 @@
     font-size: 2.3ch;
     font-weight: 600;
     border-radius: 7px;
+}
+.element_hidden{
+    visibility: hidden;
 }

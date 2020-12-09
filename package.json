@@ -20,6 +20,8 @@
     "build": "webpack --mode=production"
   },
   "dependencies": {
-    "axios": "^0.21.0"
+    "axios": "^0.21.0",
+    "showdown": "^1.9.1",
+    "typewriter-effect": "^2.17.0"
   }
 }

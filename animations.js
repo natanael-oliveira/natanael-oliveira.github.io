@@ -1,3 +1,5 @@
+import showdown from 'showdown';
+import api from './api';
 export class AnimaçaoFadeScroll {
     constructor({ element }) {
         this.el = document.querySelector(element)
@@ -35,7 +37,19 @@ export class AnimationGallery {
         this.id_projeto_ativo = 0
         this.id_image_ativa = 0
         this.projetos = []
-        this.baseUrlImgs = './images/posts/'
+        this.baseUrlImgs = './posts/'
+    }
+    buttons(btnGithub, btnDemo) {
+        if (btnGithub == "") {
+            this.modal_link_github.style.display = 'none'
+        } else {
+            this.modal_link_github.style.display = 'block'
+        }
+        if (btnDemo == "") {
+            this.modal_link_demo.style.display = 'none'
+        } else {
+            this.modal_link_demo.style.display = 'block'
+        }
     }
     setProjetos(projeto) { this.projetos.push(projeto) }
     getProjetos() { console.log(this.projetos) }
@@ -77,6 +91,7 @@ export class AnimationGallery {
         this.modal_text.appendChild(document.createTextNode(project.description))
         this.modal_link_github.setAttribute('href', project.github)
         this.modal_link_demo.setAttribute('href', project.demo)
+        this.buttons(project.github, project.demo)
     }
     modalHandlerImgActive(imgSrc) {
         this.modal_img.setAttribute('src', this.baseUrlImgs + imgSrc)
@@ -105,4 +120,16 @@ export class AnimationGallery {
         this.eventListener(imgsEl)
     }
 
+}
+export class showdownConvert {
+    constructor({ pathOrigin, outputElement }) {
+        this.convert = new showdown.Converter();
+        this.arqPath = pathOrigin
+        this.outputEl = document.querySelector(outputElement);
+        this.render()
+    }
+    async render() {
+        var arquivo = await api.get(this.arqPath)
+        this.outputEl.innerHTML = this.convert.makeHtml(arquivo.data)
+    }
 }
