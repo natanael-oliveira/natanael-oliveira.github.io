@@ -6,8 +6,8 @@
             "github": "https://github.com/natanael-oliveira/sites_primeiro_ano/tree/master/site-jornalistico",
             "demo": "https://natanael-oliveira.github.io/sites_primeiro_ano/site-jornalistico/index.html",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "banner": "site_jornalistico/jornalistico.jpg",
             "images": [
-                "site_jornalistico/jornalistico.jpg",
                 "site_jornalistico/execucao.gif"
             ]
         },
@@ -17,8 +17,8 @@
             "github": "https://github.com/natanael-oliveira/site_cafeteria",
             "demo": "",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "banner": "site_boutcoffee/boutcoffee.jpg",
             "images": [
-                "site_boutcoffee/boutcoffee.jpg",
                 "site_boutcoffee/img0.png",
                 "site_boutcoffee/img1.png",
                 "site_boutcoffee/img2.png",
@@ -38,8 +38,8 @@
             "github": "https://github.com/natanael-oliveira/sistema_SAGE",
             "demo": "",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "banner": "sistema_sage/img0.jpg",
             "images": [
-                "sistema_sage/img0.jpg",
                 "sistema_sage/img1.png",
                 "sistema_sage/img2.png",
                 "sistema_sage/img3.png",
@@ -58,8 +58,8 @@
             "github": "https://github.com/natanael-oliveira/site_petshop",
             "demo": "",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "banner": "site_petshop/mimospet.jpg",
             "images": [
-                "site_petshop/mimospet.jpg",
                 "site_petshop/img0.png",
                 "site_petshop/img1.png",
                 "site_petshop/img2.png",
@@ -76,8 +76,8 @@
             "github": "https://github.com/natanael-oliveira/site-dados-covid19",
             "demo": "https://natanael-oliveira.github.io/site-dados-covid19/",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "banner": "site_covid19/img01.png",
             "images": [
-                "site_covid19/img01.png",
                 "site_covid19/gif01.gif"
             ]
         }

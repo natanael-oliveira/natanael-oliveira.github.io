@@ -28,13 +28,6 @@ body{
     font-family: 'Source Code Pro', monospace;
     color: white;
 }
-.element_fadeOut{
-    opacity: 0;
-    transition: opacity 0.7s linear;
-}
-.element_fadeIn{
-    opacity: 1;
-}
 
 /* INFORS */
 .infor_container{display: flex;width: 90%;margin: auto;justify-content: center;}
@@ -64,30 +57,6 @@ body{
     .header{justify-content: flex-end;}
     .text_banner{font-size: 100px;text-align: start;margin-left: 30px;}
     .header{padding-right: 10%;font-size: 5ch;}
-}
-.tela_error{
-    position: fixed;
-    z-index: 10;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-}
-body{
-    /* overflow: hidden; */
-}
-
-.msg_error{
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.content_error{
-    position: relative;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 50%;
-    border: 1px solid black;
-    width: 90%;
-    text-align: center;
 }
 .single_service{
     color: white;
