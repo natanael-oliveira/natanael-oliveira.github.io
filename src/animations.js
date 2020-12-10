@@ -169,3 +169,18 @@ export class AnimationWriteScript {
     }
 
 }
+export class AnimationLoad {
+    constructor({ elementLoader }) {
+        this.el = document.querySelector(elementLoader)
+        this.eventListener()
+    }
+    eventListener() {
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                this.el.style.visibility = 'hidden'
+                this.el.style.opacity = 0
+                document.body.style.overflow = 'auto';
+            }, 500)
+        })
+    }
+}

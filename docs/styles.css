@@ -4,6 +4,7 @@ html{
 }
 body{
     background-color: #3C3A3A;
+    overflow: hidden;
 }
 .card_box{border-radius: 7px;padding: 40px;}
 .hr{border: 0.5px solid #3C3A3A; width: 90%; margin: 30px auto 20px auto;}
@@ -64,4 +65,21 @@ body{
 .icon{
     width: 70px;
     margin-bottom: 15px;
+}
+.load{
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s linear;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.load h1{
+    color: white;
+    font-family: 'Source Code Pro', monospace;
 }

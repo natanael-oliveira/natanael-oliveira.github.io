@@ -1,4 +1,4 @@
-import { AnimationFade, AnimationCarouselModal, Showdown, AnimationWriteScript } from './animations';
+import { AnimationFade, AnimationCarouselModal, Showdown, AnimationWriteScript, AnimationLoad } from './animations';
 new AnimationFade({
     element: '#habilidades'
 });
@@ -12,4 +12,7 @@ new Showdown({
 })
 new AnimationWriteScript({
     element: '.header'
+})
+new AnimationLoad({
+    elementLoader: '#load'
 })
