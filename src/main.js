@@ -1,4 +1,5 @@
 import { AnimationFade, AnimationCarouselModal, Showdown, AnimationWriteScript, AnimationLoad } from './animations';
+import '@fortawesome/fontawesome-free/js/all';
 new AnimationFade({
     element: '#habilidades'
 });

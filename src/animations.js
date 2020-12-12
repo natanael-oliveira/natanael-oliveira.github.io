@@ -162,8 +162,10 @@ export class AnimationWriteScript {
             .deleteAll()
             .typeString('Web Designer')
             .pauseFor(2500)
-            .deleteChars(8)
-            // .deleteAll()
+            .deleteAll()
+            .typeString('Sou um pouco de tudo!')
+            .pauseFor(2500)
+            .deleteAll()
             .start();
 
     }
