@@ -1,4 +1,5 @@
-### Fala Dev! Bem vindo ao meu perfil 
-Estudante de programação apaixonado por plantas e por novas tecnologias. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s 
-
-
+### Olá, Bem vindo ao meu portfólio!
+Me chamo Natanael e a 3 anos venho estudando sobre os mais variados assuntos do mundo da tecnologia.
+Atualmente estou cursando meu último ano de Técnico de Informática. Sou Desenvolvedor Web, mas gosto de me aventurar
+em outras áreas como Web Designer e Desenvolvimento Mobile. Procuro a cada dia me preparar para o que há de mais novo
+no mercado. Sempre procurando evoluir e compartilhar com meus colegas o que eu tenho aprendido ao longo dessa caminhada.

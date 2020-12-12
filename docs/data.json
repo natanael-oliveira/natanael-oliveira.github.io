@@ -2,83 +2,81 @@
     "projetos": [
         {
             "id": 1,
-            "name": "Site Jornalístico",
+            "name": "Site - Jornal Virtual",
             "github": "https://github.com/natanael-oliveira/sites_primeiro_ano/tree/master/site-jornalistico",
             "demo": "https://natanael-oliveira.github.io/sites_primeiro_ano/site-jornalistico/index.html",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-            "banner": "site_jornalistico/jornalistico.jpg",
+            "description": "Site de um jornal Virtual. Este foi um dos meus primeiro sites feito apenas com HTML e CSS. Desenvolvido no meu 1° ano do curso Técnico de Informática.",
+            "banner": "site_jornalistico/banner.jpg",
             "images": [
-                "site_jornalistico/execucao.gif"
+                "site_jornalistico/01.gif"
             ]
         },
         {
             "id": 2,
-            "name": "Boutcoffee - Site de cafeteria",
-            "github": "https://github.com/natanael-oliveira/site_cafeteria",
+            "name": "Site - Bout Coffee",
+            "github": "",
             "demo": "",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-            "banner": "site_boutcoffee/boutcoffee.jpg",
+            "description": "Site de uma cafeteria fictícia. Esse projeto foi desenvolvido em PHP com MySQL. Nele foi aplicado algumas funcionalidades simples como validação de formulário, CRUD de Tabelas no Banco de Dados entre outros. O layout desse site foi desenvolvido na ferramenta Adobe Illustrator. Trabalho curricular realizado no meu 2° ano do curso Técnico de Informática.",
+            "banner": "site_boutcoffee/banner.jpg",
             "images": [
-                "site_boutcoffee/img0.png",
-                "site_boutcoffee/img1.png",
-                "site_boutcoffee/img2.png",
-                "site_boutcoffee/img3.png",
-                "site_boutcoffee/img4.png",
-                "site_boutcoffee/img5.png",
-                "site_boutcoffee/img7.png",
-                "site_boutcoffee/img8.png",
-                "site_boutcoffee/img9.png",
-                "site_boutcoffee/img10.png",
-                "site_boutcoffee/img11.png"
+                "site_boutcoffee/01.jpg",
+                "site_boutcoffee/02.jpg",
+                "site_boutcoffee/03.jpg",
+                "site_boutcoffee/04.jpg",
+                "site_boutcoffee/05.jpg",
+                "site_boutcoffee/07.jpg",
+                "site_boutcoffee/08.jpg",
+                "site_boutcoffee/09.jpg",
+                "site_boutcoffee/10.jpg",
+                "site_boutcoffee/11.jpg",
+                "site_boutcoffee/12.jpg"
             ]
         },
         {
             "id": 3,
-            "name": "SAGE - Sistema Administrativo de Gerenciamento de Estoque",
+            "name": "Sistema - SAGE",
             "github": "https://github.com/natanael-oliveira/sistema_SAGE",
             "demo": "",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-            "banner": "sistema_sage/img0.jpg",
+            "description": "Projeto SAGE - Sistema Administrativo de Gerenciamento de Estoque - como o próprio nome já diz esse sistema para desktop trabalha para regir um sistema de estoque em escala real, da entrada dos produtos até sua saída. Funcionalidades como verificação de datas de vencimento, quantidades em estoque, geração de relatórios, sistema de login e validação, entre outros. Principais ferramentas de desenvolvimento: Java, Hibernate, MySQL e JasperReports. Trabalho curricular realizado do 3° Ano do meu Curso Técnico de Informática.",
+            "banner": "sistema_sage/banner.jpg",
             "images": [
-                "sistema_sage/img1.png",
-                "sistema_sage/img2.png",
-                "sistema_sage/img3.png",
-                "sistema_sage/img4.png",
-                "sistema_sage/img5.png",
-                "sistema_sage/img7.png",
-                "sistema_sage/img8.png",
-                "sistema_sage/img9.png",
-                "sistema_sage/img10.png",
-                "sistema_sage/img11.png"
+                "sistema_sage/01.jpg",
+                "sistema_sage/02.jpg",
+                "sistema_sage/03.jpg",
+                "sistema_sage/04.jpg",
+                "sistema_sage/05.jpg",
+                "sistema_sage/06.jpg",
+                "sistema_sage/07.jpg",
+                "sistema_sage/08.jpg",
+                "sistema_sage/09.jpg",
+                "sistema_sage/10.jpg"
             ]
         },
         {
             "id": 4,
-            "name": "Mimospet - Site de petshop",
-            "github": "https://github.com/natanael-oliveira/site_petshop",
+            "name": "Web Designer - Mimos Pet",
+            "github": "",
             "demo": "",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-            "banner": "site_petshop/mimospet.jpg",
+            "description": "Web Designer de um site fictício de PetShop. Layout desenvolvido com a ferramenta Figma.",
+            "banner": "site_petshop/banner.jpg",
             "images": [
-                "site_petshop/img0.png",
-                "site_petshop/img1.png",
-                "site_petshop/img2.png",
-                "site_petshop/img3.png",
-                "site_petshop/img4.png",
-                "site_petshop/img5.png",
-                "site_petshop/img7.png",
-                "site_petshop/img8.png"
+                "site_petshop/01.jpg",
+                "site_petshop/02.jpg",
+                "site_petshop/03.jpg",
+                "site_petshop/05.jpg",
+                "site_petshop/06.jpg"
             ]
         },
         {
             "id": 5,
-            "name": "Site de Dados da Covid-19",
+            "name": "Site - Dados da Covid-19",
             "github": "https://github.com/natanael-oliveira/site-dados-covid19",
             "demo": "https://natanael-oliveira.github.io/site-dados-covid19/",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-            "banner": "site_covid19/img01.png",
+            "description": "Este site informa os dados atualizados da Contagem de Infectados e Óbitos pela Covid-19 no mundo todo. O site consome uma API que fornece esses dados por meio de Requisições AJAX com JS. Ferramentas Utilizadas: Javascript, Bootstrap Framework e axios.",
+            "banner": "site_covid19/banner.jpg",
             "images": [
-                "site_covid19/gif01.gif"
+                "site_covid19/01.jpg",
+                "site_covid19/02.gif"
             ]
         }
     ]

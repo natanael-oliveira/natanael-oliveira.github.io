@@ -6,7 +6,7 @@ body{
     background-color: #3C3A3A;
     overflow: hidden;
 }
-.card_box{border-radius: 7px;padding: 40px;}
+.card_box_{}
 .hr{border: 0.5px solid #3C3A3A; width: 90%; margin: 30px auto 20px auto;}
 .text_banner{
     font-weight: 800;
@@ -32,17 +32,21 @@ body{
 
 /* INFORS */
 .infor_container{display: flex;width: 90%;margin: auto;justify-content: center;}
-.infor_left{height: 400px;background-color:rgb(32, 32, 36);}
+.infor_left{background-color:rgb(32, 32, 36);text-align: center;border-radius: 7px;padding: 30px;color:white}
+.infor_left p{color: #D7D7D7;}
+.infor_right{background-color:rgb(32, 32, 36);color: white;border-radius: 7px;padding: 40px;}
 .infor_right{background-color:rgb(32, 32, 36);color: white;}
+.infor_right p{color: #D7D7D7;}
 .infor_avatar{  width: 160px;height: 160px;margin: 10px auto 15px auto;}
 .infor_avatar img {border-radius: 50%;width: 100%;}
-.infor_text{font-family:'Segoe UI';font-weight: 500;text-align: center;color: white;}
-
+.infor_icons a{color:white;font-size: 3.4ch;text-decoration: none;transition: all 0.3s linear;margin-left: 10px;}
+.infor_icons a:hover{color:#D7D7D7;}
 
 @media(min-width:200px){
     .infor_container{flex-direction: column;}
     .infor_left{width: 100%;margin: 15px auto 15px auto;}
     .infor_right{width: 100%;margin: 0px auto 15px auto;}
+    .infor_right p{text-align: justify;}
     .header{justify-content: center;}
     .text_banner{font-size: 50px;text-align: center;}
     .header{text-align: center;font-size: 3ch;}
@@ -58,6 +62,7 @@ body{
     .header{justify-content: flex-end;}
     .text_banner{font-size: 100px;text-align: start;margin-left: 30px;}
     .header{padding-right: 10%;font-size: 5ch;}
+    .infor_right p{text-align: start;}
 }
 .single_service{
     color: white;
@@ -82,4 +87,7 @@ body{
 .load h1{
     color: white;
     font-family: 'Source Code Pro', monospace;
+}
+.contact_container{
+    
 }

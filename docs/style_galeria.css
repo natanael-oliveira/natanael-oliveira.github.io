@@ -103,6 +103,7 @@
     opacity: 0;
     transition: opacity .2s linear;
     cursor: pointer;
+    text-decoration: none;
 }
 .carousel_btn:hover{opacity: 1;}
 .carousel_btn_prev{box-shadow:2px 0px 10px 0px  rgba(0, 0, 0, 0.1);}
@@ -132,9 +133,15 @@
 .modal_btn_control{
     background-color: #4075DF;
     color: white;
-    padding: 10px;
+    padding: 12px;
     margin: 15px 10px 15px 0px;
-    font-size: 2.3ch;
+    font-size: 2ch;
     font-weight: 600;
     border-radius: 7px;
+    transition: all 0.3s linear;
+}
+.modal_btn_control:hover{
+    background-color: #264d9c;
+    color:white;
+    text-decoration: none;
 }
