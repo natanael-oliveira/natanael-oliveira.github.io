@@ -30,35 +30,46 @@ export class AnimationFade {
 export class AnimationCarouselModal {
     constructor() {
         this.modal = document.querySelector(".modal_container")
-        this.modalImg = document.querySelector(".carousel_img")
         this.btnClose = document.querySelector(".modal_btn_close")
-        this.btnPrev = document.querySelector(".carousel_btn_prev")
-        this.btnNext = document.querySelector(".carousel_btn_next")
         this.modalTitle = document.querySelector(".modal_title")
         this.modalDescription = document.querySelector(".modal_description")
         this.btnGithub = document.querySelector(".modal_btn_github")
         this.btnDemo = document.querySelector(".modal_btn_demo")
         this.gallery = document.querySelector(".galeria_content")
+        this.carousel = document.querySelector('.carousel-inner')
+        // this.ol = document.querySelector('.indicators_imgs_project')
         this.projetoService = new ProjetoService()
         this.pathPosts = './posts/'
         this.projects
         this.activeProject
-        this.activeImage = 0
         this.activeModal
         this.imagesGallery
+        this.imagesCarousel
         this.render()
     }
     reset() {
         this.modalTitle.innerHTML = ''
         this.modalDescription.innerHTML = ''
-        this.activeImage = 0
-        this.modalImg.setAttribute('src', '#')
+        // this.ol.innerHTML = ''
+        this.carousel.innerHTML = ''
     }
     async render() {
         this.projects = await this.projetoService.list()
         for (var projeto of this.projects) { this.buildGallery(projeto.id, projeto.banner) }
-        this.imagesGallery = document.querySelectorAll(".galeria_item_img")
+        this.imagesGallery = document.querySelectorAll('.galeria_item_img')
         this.eventListener()
+    }
+    eventListener() {
+        for (let i = 0; i < this.imagesGallery.length; i++) {
+            this.imagesGallery[i].addEventListener('click', () => {
+                this.buildModal(this.projects[i])
+                this.toggle(i)
+            })
+        }
+        this.btnClose.addEventListener('click', () => {
+            this.toggle(null)
+            this.reset()
+        })
     }
     buildGallery(idProject, imgPath) {
         var item = document.createElement('div')
@@ -77,7 +88,25 @@ export class AnimationCarouselModal {
         this.gallery.appendChild(item)
     }
     buildModal(project) {
-        this.modalImg.setAttribute('src', this.pathPosts + project.images[0])
+        for (let i = 0; i < project.images.length; i++) {
+            // var li = document.createElement('li')
+            // li.setAttribute('data-target', '#carousel_imgs_project')
+            // li.setAttribute('data-slide-to', i)
+            // i === 0 ? li.classList.add('active') : null
+            // this.ol.appendChild(li)
+
+            var div = document.createElement('div')
+            div.classList.add('carousel-item')
+            i === 0 ? div.classList.add('active') : null
+
+            var img = document.createElement('img')
+            img.setAttribute('class', 'd-block')
+            img.setAttribute('src', this.pathPosts + project.images[i])
+            img.setAttribute('alt', `Imagem ${i + 1} do projeto ${project.name}`)
+            img.style.maxHeight = '400px'
+            div.appendChild(img)
+            this.carousel.appendChild(div)
+        }
         this.modalTitle.appendChild(document.createTextNode(project.name))
         this.modalDescription.appendChild(document.createTextNode(project.description))
         if (project.github != "") {
@@ -95,33 +124,7 @@ export class AnimationCarouselModal {
 
 
     }
-    buildImgModal(img) {
-        this.modalImg.setAttribute('src', this.pathPosts + img)
-    }
-    eventListener() {
-        for (let i = 0; i < this.imagesGallery.length; i++) {
-            this.imagesGallery[i].addEventListener('click', () => {
-                this.buildModal(this.projects[i])
-                this.toggle(i)
-            })
-        }
-        this.btnClose.addEventListener('click', () => {
-            this.toggle(null)
-            this.reset()
-        })
-        this.btnPrev.addEventListener('click', () => {
-            if (this.activeImage > 0) {
-                this.activeImage--
-                this.buildImgModal(this.projects[this.activeProject].images[this.activeImage])
-            }
-        })
-        this.btnNext.addEventListener('click', () => {
-            if (this.activeImage < this.projects[this.activeProject].images.length - 1) {
-                this.activeImage++
-                this.buildImgModal(this.projects[this.activeProject].images[this.activeImage])
-            }
-        })
-    }
+
     toggle(idProject) {
         this.modal.classList.toggle('active_modal')
         this.activeModal = !this.activeModal
