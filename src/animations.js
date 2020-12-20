@@ -37,7 +37,6 @@ export class AnimationCarouselModal {
         this.btnDemo = document.querySelector(".modal_btn_demo")
         this.gallery = document.querySelector(".galeria_content")
         this.carousel = document.querySelector('.carousel-inner')
-        // this.ol = document.querySelector('.indicators_imgs_project')
         this.projetoService = new ProjetoService()
         this.pathPosts = './posts/'
         this.projects
@@ -50,7 +49,6 @@ export class AnimationCarouselModal {
     reset() {
         this.modalTitle.innerHTML = ''
         this.modalDescription.innerHTML = ''
-        // this.ol.innerHTML = ''
         this.carousel.innerHTML = ''
     }
     async render() {
@@ -62,7 +60,7 @@ export class AnimationCarouselModal {
     eventListener() {
         for (let i = 0; i < this.imagesGallery.length; i++) {
             this.imagesGallery[i].addEventListener('click', () => {
-                this.buildModal(this.projects[i])
+                this.buildModal(i)
                 this.toggle(i)
             })
         }
@@ -71,7 +69,7 @@ export class AnimationCarouselModal {
             this.reset()
         })
     }
-    buildGallery(idProject, imgPath) {
+    buildGallery(id, imgPath) {
         var item = document.createElement('div')
         var itemContent = document.createElement('div')
         var img = document.createElement('img')
@@ -80,49 +78,39 @@ export class AnimationCarouselModal {
         itemContent.classList.add('galeria_item_content')
         img.classList.add('galeria_item_img')
 
-        img.setAttribute('id', idProject)
+        img.setAttribute('id', id)
         img.setAttribute('src', this.pathPosts + imgPath)
 
         itemContent.appendChild(img)
         item.appendChild(itemContent)
         this.gallery.appendChild(item)
     }
-    buildModal(project) {
-        for (let i = 0; i < project.images.length; i++) {
-            // var li = document.createElement('li')
-            // li.setAttribute('data-target', '#carousel_imgs_project')
-            // li.setAttribute('data-slide-to', i)
-            // i === 0 ? li.classList.add('active') : null
-            // this.ol.appendChild(li)
-
+    buildModal(id) {
+        this.modalTitle.appendChild(document.createTextNode(this.projects[id].name))
+        this.modalDescription.appendChild(document.createTextNode(this.projects[id].description))
+        if (this.projects[id].github != "") {
+            this.btnGithub.style.display = "block"
+            this.btnGithub.setAttribute('href', this.projects[id].github)
+        } else {
+            this.btnGithub.style.display = "none"
+        }
+        if (this.projects[id].demo != "") {
+            this.btnDemo.style.display = "block"
+            this.btnDemo.setAttribute('href', this.projects[id].demo)
+        } else {
+            this.btnDemo.style.display = "none"
+        }
+        for (let i = 0; i < this.projects[id].images.length; i++) {
             var div = document.createElement('div')
             div.classList.add('carousel-item')
             i === 0 ? div.classList.add('active') : null
-
             var img = document.createElement('img')
             img.setAttribute('class', 'd-block')
-            img.setAttribute('src', this.pathPosts + project.images[i])
-            img.setAttribute('alt', `Imagem ${i + 1} do projeto ${project.name}`)
+            img.setAttribute('src', this.pathPosts + this.projects[id].images[i])
             img.style.maxHeight = '400px'
             div.appendChild(img)
             this.carousel.appendChild(div)
         }
-        this.modalTitle.appendChild(document.createTextNode(project.name))
-        this.modalDescription.appendChild(document.createTextNode(project.description))
-        if (project.github != "") {
-            this.btnGithub.style.display = "block"
-            this.btnGithub.setAttribute('href', project.github)
-        } else {
-            this.btnGithub.style.display = "none"
-        }
-        if (project.demo != "") {
-            this.btnDemo.style.display = "block"
-            this.btnDemo.setAttribute('href', project.demo)
-        } else {
-            this.btnDemo.style.display = "none"
-        }
-
-
     }
 
     toggle(idProject) {
