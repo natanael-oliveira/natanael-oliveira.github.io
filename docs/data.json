@@ -78,6 +78,32 @@
                 "site_covid19/01.jpg",
                 "site_covid19/02.gif"
             ]
+        },
+        {
+            "id": 6,
+            "name": "Site - Galeria e Carousel de Imagens",
+            "github": "https://github.com/natanael-oliveira/imagesGallery",
+            "demo": "https://natanael-oliveira.github.io/imagesGallery",
+            "description": "Neste site trabalhei alguns conceitos básicos de estilização no CSS e de Eventos no JavaScript. Desenvolvi uma galeria de imagens dentro de um modal que exibi as imagens de forma sistematizada exibindo a imagem selecionada no momento.",
+            "banner": "site_galeria_imagens/banner.png",
+            "images": [
+                "site_galeria_imagens/01.gif",
+                "site_galeria_imagens/02.png",
+                "site_galeria_imagens/banner.png"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Site - Listando Repositórios do GitHub",
+            "github": "https://github.com/natanael-oliveira/list-repos-github",
+            "demo": "https://natanael-oliveira.github.io/list-repos-github",
+            "description": "Aqui já inicio alguns conceitos mais avançados de Javascript. Utilizando a Sintáxe do EcmaScript 8 para a criação de funções assíncronas além de conceitos do ES6, busquei desenvolver umm site que lista os repositórios de um usuário qualquer do github. Caso o usuário não exista será exibido a mensagem 'usuário <NomeDoUsuário> não encontrado' na tela do navegador.",
+            "banner": "site_listar_repositorios_github/banner.png",
+            "images": [
+                "site_listar_repositorios_github/01.gif",
+                "site_listar_repositorios_github/banner.png",
+                "site_listar_repositorios_github/02.png"
+            ]
         }
     ]
 }
