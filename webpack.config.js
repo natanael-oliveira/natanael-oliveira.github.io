@@ -1,12 +1,12 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
     entry: ['@babel/polyfill', './src/js/index.js'],
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: '[name].bundle.js',
+        filename: 'bundle.js',
         clean: true
     },
     devServer: {
@@ -38,31 +38,25 @@ module.exports = {
             {
                 test: /\.css$/i,
                 use: [
-                    'style-loader',
-                    'css-loader'
+                    'css-loader',
+                    'style-loader'
                 ],
             },
             {
                 test: /\.(svg|png|gif|jpe?g)$/i,
-                loader: 'file-loader',
+                loader: 'url-loader',
                 options: {
-                    // outputPath: 'images',
-                    name: '[path][name].[ext]'
+                    limit: 8192,
+                    name: '[name].[ext]',
+                    publicPath: 'images/',
+                    outputPath: 'images/'
                 }
             },
             {
                 test: /\.html$/i,
                 loader: 'html-loader',
                 options: {
-                    sources: {
-                        list: [
-                            {
-                                tag: 'img',
-                                attribute: 'data-src',
-                                type: 'src'
-                            }
-                        ]
-                    }
+                    sources: false
                 }
             }
         ]
@@ -78,6 +72,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'about.html',
             template: './src/about.html'
-        })
+        }),
+        new CleanWebpackPlugin()
     ],
 }
